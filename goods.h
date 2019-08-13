@@ -5,7 +5,7 @@
 // Example:
 //    Goods test;
 //    test.SetGoodsInfo(1, 10000);
-//    std::cout << test.GetIndex() << " - " << test.GetPrice << endl;
+//    std::cout << test.GetPrice() << " - " << test.GetPrice << endl;
 class Goods{
  public:
   void SetGoodsInfo(int index, int price);
