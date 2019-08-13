@@ -3,12 +3,20 @@
 
 // Push Goods object to shopping_list_ vector
 void Shopping::PushList(Goods object) {
-  shopping_list_.push_back(object);
+  try {
+     shopping_list_.push_back(object);
+  } catch (...) {
+     cout << "예외 처리" << endl;
+  }
 }
 
 // Get Goods object from end of shopping_list_ vector
 Goods Shopping::GetLastElement() {
-  return shopping_list_.back();
+  if (shopping_list_.size() != ) {
+    return shopping_lilst_.back();
+  } else {
+    throw "can not get anything";
+  }
 }
 
 // Print shopping_list_ Elements
