@@ -27,6 +27,9 @@ TEST(shopping_list_test, shopping_object_test) {
   Goods goods_test_object4;
   Goods goods_test_object5;
 
+  // check Error Case 
+  shopping_object.PushList(goods_test_object1);
+  
   // Make 5 Sample datas
   goods_test_object1.SetGoodsInfo(3, 2500);
   goods_test_object2.SetGoodsInfo(1, 10000);
